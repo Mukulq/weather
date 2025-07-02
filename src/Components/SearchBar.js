@@ -9,7 +9,7 @@ function SearchBar(props) {
   const search = () => {
     if (query !== "") {
       fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=1842c904530a43dd8ca184346241705 &q=${query}&days=6&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=1842c904530a43dd8ca184346241705 &q=${query}&days=6&aqi=no&alerts=no`
       )
         .then((res) => res.json())
         .then((data) => {
