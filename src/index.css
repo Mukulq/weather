@@ -24,6 +24,7 @@ body {
   background-color: rgba(233, 225, 225, 0.226);
   padding: 40px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   height: auto;
 }
@@ -95,3 +96,72 @@ input::placeholder {
 .search-results > div > h1 {
   text-align: center;
 }
+
+/* ============ Responsive Styles Start ============ */
+
+@media (max-width: 768px) {
+  .main {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-bar > input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-bar > button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-results > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .forecast {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .forecast > div {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar > input {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .search-bar > button {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .search-results > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .forecast > div {
+    width: 70px;
+  }
+}
+
+/* ============ Responsive Styles End ============ */
